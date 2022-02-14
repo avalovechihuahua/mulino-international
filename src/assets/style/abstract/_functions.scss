@@ -1,0 +1,54 @@
+@use 'sass:map';
+@use 'sass:list';
+@use 'variables' as v;
+
+@function color($args...) {
+  @return map.get(v.$colors, $args...);
+}
+
+@function breakpoint($size) {
+  $bp: map.get(v.$breakpoints, $size);
+
+  @if $bp {
+    @return $bp;
+  }
+
+  @else {
+    @return $size;
+  }
+}
+
+@function to-per-xxl($size) {
+  $bp: map.get(v.$breakpoints, xxl);
+  @return $size / $bp * 100%;
+}
+
+@function to-per-xl($size) {
+  $bp: map.get(v.$breakpoints, xl);
+  @return $size / $bp * 100%;
+}
+
+@function to-per-sm($size) {
+  $bp: map.get(v.$breakpoints, sm);
+  @return $size / $bp * 100%;
+}
+
+@function to-vw-xxl($size) {
+  $bp: map.get(v.$breakpoints, xxl);
+  @return $size / $bp * 100vw;
+}
+
+@function to-vw-xxxl($size) {
+  $bp: map.get(v.$breakpoints, xxxl);
+  @return $size / $bp * 100vw;
+}
+
+@function to-vw-xl($size) {
+  $bp: map.get(v.$breakpoints, xl);
+  @return $size / $bp * 100vw;
+}
+
+@function to-vw-sm($size) {
+  $bp: map.get(v.$breakpoints, sm);
+  @return $size / $bp * 100vw;
+}

@@ -1,0 +1,19 @@
+@forward 'breakpoints';
+@forward 'colors';
+
+//
+// Container & Padding
+// ===========
+$container-padding-mb: 3.8%;
+$container-padding-pad: 20px;
+
+//
+// Easing
+// ===========
+
+$ease-out-cubic: cubic-bezier(.215, .61, .355, 1);
+$ease-in-out-sine: cubic-bezier(.445, .05, .55, .95);
+$ease-in-quad: cubic-bezier(.55, .085, .68, .53);
+$ease-out-quad: cubic-bezier(.25, .46, .45, .94);
+$ease-in-quart: cubic-bezier(.895, .03, .685, .22);
+$ease-out-back: cubic-bezier(.175, .885, .32, 1.275);

@@ -1,0 +1,26 @@
+%text-invisible {
+  font-size: 0;
+  line-height: 0;
+  color: transparent;
+}
+
+%position-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+%source-han-sans {
+  font-family: SourceHanSansTW, 'Microsoft JhengHei', PingFangTC, sans-serif;
+}
+
+%source-han-seriftc-bold {
+  font-family: SourceHanSerifTC-Bold, 'Microsoft JhengHei', PingFangTC, sans-serif;
+  font-weight: bold;
+}
+
+%source-han-seriftc-heavy {
+  font-family: SourceHanSerifTC-Heavy, 'Microsoft JhengHei', PingFangTC, sans-serif;
+  font-weight: 900;
+}

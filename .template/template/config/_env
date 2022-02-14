@@ -1,0 +1,6 @@
+BASE_URL=/<%= projectBaseUrl %>
+PROJECT_NAME=<%= projectName %>
+PRACTICE_MODE=<% practiceMode %>
+
+VUE_APP_CUSTOMER_ID=<%= options.cid %>
+VUE_APP_EVENT_ID=<%= projectName %>

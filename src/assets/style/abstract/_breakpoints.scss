@@ -1,0 +1,17 @@
+$design: (
+  'mobile-first': 'min',
+  'desktop-first': 'max'
+);
+
+$type: 'desktop-first';
+
+$breakpoints: (
+  extrasm: 320,
+  sm: 360,
+  sm2: 460,
+  md: 768,
+  lg: 1024,
+  xl: 1366,
+  xxl: 1680,
+  xxxl: 1920
+);
